@@ -5,6 +5,7 @@ Packages
 TypeScript の最新バージョンを使ってください。
 React 18 系の最新バージョンを使ってください。
 Next.js 14 系の最新バージョンを使ってください。
+Next.jsはAppRouterを使ってください。
 スタイリングは tailwind で行います .
 アイコンは Remix Icon を使います。
 ESLint と Prettier でコードを静的解析・フォーマットします。
@@ -16,6 +17,7 @@ Directory structure
 以下のようなディレクトリ構造としてください。
 ```
 src
+ |- app // Next.js の App Rotuer に則る
  |- components
  |  |- features // 特定の機能に関心のあるコンポーネントを配置する
  |  |   |- News
@@ -31,7 +33,6 @@ src
  |- constants // 定数を配置する
  |- domains // ドメインモデルを定義する
  |- hooks // ドメインモデルごとにカスタムフックを配置する
- |- pages // Next.js の Pages Rotuer に則る
  |- services // microCMS など外部サービスの実装を定義する
  |- styles // 共通スタイルを配置する
  ```
